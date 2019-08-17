@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>simple crystal game</title>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style type="text/css">
+
+    .crystal-image {
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div class = "jumbotron"> Instructions for the game: <br> <br>
+
+   * There will be four crystals displayed as buttons on the page. <br>
+
+   * The player will be shown a random number at the start of the game. <br>
+
+   * When the player clicks on a crystal, it will add a specific amount of points to the player's total score.  <br>
+
+     * Your game will hide this amount until the player clicks a crystal. <br>
+     * When they do click one, update the player's score counter. <br>
+
+   * The player wins if their total score matches the random number from the beginning of the game. <br>
+
+   * The player loses if their score goes above the random number. <br>
+
+   * The game restarts whenever the player wins or loses. <br>
+
+     * When the game begins again, the player should see a new random number. Also, all the crystals will have four new hidden values. Of course, the user's score (and score counter) will reset to zero. <br>
+
+   * The app should show the number of games the player wins and loses. To that end, do not refresh the page as a means to restart the game. <br>
+  </div>
+    <h1>House Score: <span id="number-to-guess"></span></h1>
+    <h1> Your Current Score = <span id="score"></span></h1>
+  <div id="wins"> Wins: 0 </div>
+  <div id="losses"> Losses: 0 </div>
+
+  <!-- Note that this div is now empty. We will fill it dynamically -->
+  <div id="crystals"></div>
+
+<script src="./assets/javascript/game.js"></script>
+</body>
